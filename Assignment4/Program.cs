@@ -56,6 +56,14 @@ namespace Assignment4
             //Console.WriteLine($"The genre that is equal the genreNumber {genreNumber} is: {genre}");
             #endregion
 
+            #region Question7
+            //Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+
+            //Genre genre = Genre.Fiction;
+            //string genreStr = genre.ToString();
+            //Console.WriteLine($"The genreStr is: {genreStr}");
+            #endregion
+
         }
     }
 }
