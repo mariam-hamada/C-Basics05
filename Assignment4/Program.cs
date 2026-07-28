@@ -20,6 +20,14 @@
             //Console.WriteLine(book.copiesInStock);
             #endregion
 
+            #region Question3
+            //Add a public string Title; field to Book. Set it and print it from Main.
+
+            //Book book = new Book();
+            //book.Title = "C# course";
+            //Console.WriteLine($"the Title is: {book.Title}");
+            #endregion
+
 
         }
     }
