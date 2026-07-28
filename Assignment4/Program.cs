@@ -39,6 +39,14 @@ namespace Assignment4
 
             #endregion
 
+            #region Question5
+            //Using the Genre enum above, print the underlying int value of Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.
+           
+            //Console.WriteLine("The underlying int value ofthe genres is:");
+            //Console.WriteLine($"For the Genere => Fiction is:{(int)Genre.Fiction}");
+            //Console.WriteLine($"For the Genere => NonFiction is:{(int)Genre.NonFiction}");
+            //Console.WriteLine($"For the Genere => Science is:{(int)Genre.Science}");
+            #endregion
 
         }
     }
