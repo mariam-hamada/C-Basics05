@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿using Microsoft.VisualBasic;
+using System.Drawing;
+using System.Text.RegularExpressions;
 
 namespace Assignment4
 {
@@ -71,6 +73,17 @@ namespace Assignment4
             //Genre genre = (Genre)Enum.Parse(typeof(Genre), genreText);
             //Console.WriteLine($"The genre is: {genre}");
 
+            #endregion
+
+            #region Question9
+            //Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to attempt the conversion.Print "Unknown genre" if it fails.
+           
+            //string genreText = "Mystery";
+            //Genre genre;
+            //if (Enum.TryParse(genreText, out genre))
+            //    Console.WriteLine($"The genre is: {genre}");
+            //else
+            //    Console.WriteLine("Unknown genre");
             #endregion
 
         }
