@@ -1,10 +1,91 @@
-﻿namespace Assignment4
+﻿using Microsoft.VisualBasic;
+using System.Drawing;
+using System.Text.RegularExpressions;
+
+namespace Assignment4
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Question1
+            ////Add a private string password = "secret"; field to a Book class. Try to print it from Main(outside the class). What happens, and why?
+
+            //Book book = new Book();
+            ////the program will not compile as the passowrd is a private member to the class so it will be seen only inside the class scope
+            //Console.WriteLine(book.password);
+            #endregion
+
+            #region Question2
+            ////Add an internal int copiesInStock = 5; field to Book. Print it from Main. Does it compile?Why ?
+
+            //Book book = new Book();
+            ////yes it will compile and print 5 , as the member is internal so it is seen inside our solution (same namespace)
+            //Console.WriteLine(book.copiesInStock);
+            #endregion
+
+            #region Question3
+            //Add a public string Title; field to Book. Set it and print it from Main.
+
+            //Book book = new Book();
+            //book.Title = "C# course";
+            //Console.WriteLine($"the Title is: {book.Title}");
+            #endregion
+
+            #region Question4
+            //Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book, assign it Genre.Science, and print it.
+
+            //Book book = new Book();
+            //book.genre = Genre.Science;
+            //Console.WriteLine($"The Genre of the book is: {book.genre}");
+
+            #endregion
+
+            #region Question5
+            //Using the Genre enum above, print the underlying int value of Genre.Fiction, Genre.NonFiction, and Genre.Science by casting each to int.
+
+            //Console.WriteLine("The underlying int value ofthe genres is:");
+            //Console.WriteLine($"For the Genere => Fiction is:{(int)Genre.Fiction}");
+            //Console.WriteLine($"For the Genere => NonFiction is:{(int)Genre.NonFiction}");
+            //Console.WriteLine($"For the Genere => Science is:{(int)Genre.Science}");
+            #endregion
+
+            #region Question6
+            //Given int genreNumber = 1;, cast it into a Genre value and print the result.
+
+            //int genreNumber = 1;
+            //Genre genre = (Genre)genreNumber;
+            //Console.WriteLine($"The genre that is equal the genreNumber {genreNumber} is: {genre}");
+            #endregion
+
+            #region Question7
+            //Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+
+            //Genre genre = Genre.Fiction;
+            //string genreStr = genre.ToString();
+            //Console.WriteLine($"The genreStr is: {genreStr}");
+            #endregion
+
+            #region Question8
+            //Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and print the result.
+
+            //string genreText = "Science";
+            //Genre genre = (Genre)Enum.Parse(typeof(Genre), genreText);
+            //Console.WriteLine($"The genre is: {genre}");
+
+            #endregion
+
+            #region Question9
+            //Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to attempt the conversion.Print "Unknown genre" if it fails.
+           
+            //string genreText = "Mystery";
+            //Genre genre;
+            //if (Enum.TryParse(genreText, out genre))
+            //    Console.WriteLine($"The genre is: {genre}");
+            //else
+            //    Console.WriteLine("Unknown genre");
+            #endregion
+
         }
     }
 }
